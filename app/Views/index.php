@@ -65,8 +65,8 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="fas fa-home    "></i> <span>Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="fas fa-user-alt    "></i> <span>Sobre mi</span></a></li>
           <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Logros</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Habilidades</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a></li>
@@ -481,7 +481,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        Copyright <i class="fas fa-copyright    "></i> <strong><span>jflorido94.es</span></strong>
+        Copyright <i class="fa-light fa-copyright"></i> <i class="fa-regular fa-copyright"></i> <i class="fa-solid fa-copyright"></i><strong><span>jflorido94.es</span></strong>
       </div>
     </div>
   </footer><!-- End  Footer -->
