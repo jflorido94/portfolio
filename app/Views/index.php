@@ -481,7 +481,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        Copyright <i class="fa-light fa-copyright"></i> <i class="fa-regular fa-copyright"></i> <i class="fa-solid fa-copyright"></i><strong><span>jflorido94.es</span></strong>
+        Copyright <i class="fa-solid fa-copyright"></i> <i class="fas fa-copyright    "></i><i class="fas fa-copyright    "></i><strong><span>jflorido94.es</span></strong>
       </div>
     </div>
   </footer><!-- End  Footer -->
