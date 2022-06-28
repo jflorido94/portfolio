@@ -16,13 +16,13 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- vendors CSS Files -->
+  <link href="assets/vendors/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -478,16 +478,16 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- vendors JS Files -->
+  <script src="assets/vendors/purecounter/purecounter.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendors/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/typed.js/typed.min.js"></script>
+  <script src="assets/vendors/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendors/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
