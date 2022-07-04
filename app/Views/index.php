@@ -441,7 +441,7 @@
         <div class="row" data-aos="fade-in">
 
           <div class="col-lg-7 mt-5 mx-auto mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="<?= base_url('/contact') ?>" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
