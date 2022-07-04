@@ -17,7 +17,7 @@ class Home extends BaseController
           $nombreusuario = $this->request->getVar('nombre');
           $emailusuario = $this->request->getVar('email');
           
-          var_dump($this->request);
+          dd($this->request);
   
           // Datos el email destino. Donde irá a parar el formulario
           $this->email->setTo("hbranky22@hotmail.com");
@@ -28,6 +28,8 @@ class Home extends BaseController
           $this->email->setSubject($subject);
           $this->email->setMessage($message . $nombreusuario . $emailusuario);
   
+            dd($this->email);
+
           if ($this->email->send()) {
               $data = [
                   'msg'    => 'Email enviado correctamente'
@@ -37,6 +39,8 @@ class Home extends BaseController
                   'msg'	=> 'Email No enviado<br />'. $this->email->printDebugger(['headers'])
               ];
           }
+
+          dd($data);
   
         //   return view('index',$data);
         //   echo view('contact_view', $data);
