@@ -6,7 +6,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('index');
+        $data = [
+            'msg'    => 'Rellena formulario de contacto'
+        ];
+        return view('index', $data);
     }
 
     public function contact()
