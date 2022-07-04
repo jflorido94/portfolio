@@ -476,7 +476,7 @@
           ?>
 
           <h1>Formulario de contacto</h1>
-          <form action="<?php echo base_url(); ?>/contact/sendMail" method="post">
+          <form action="<?php echo base_url(); ?>/contact" method="post">
 
             <input type="text" id="nombre" name="nombre" placeholder="Nombre">
             <input type="text" id="email" name="email" placeholder="Email">
