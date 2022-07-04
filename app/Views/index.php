@@ -56,7 +56,7 @@
 
       <div class="profile">
         <img src="assets/img/profile-img2.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href= <?= base_url(); ?> >Javier Florido</a></h1>
+        <h1 class="text-light"><a href=<?= base_url(); ?>>Javier Florido</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="linkedin"><i class="fas fa-linkedin"></i></a>
         </div>
@@ -440,7 +440,7 @@
 
         <div class="row" data-aos="fade-in">
 
-          <div class="col-lg-7 mt-5 mx-auto mt-lg-0 d-flex align-items-stretch">
+          <!-- <div class="col-lg-7 mt-5 mx-auto mt-lg-0 d-flex align-items-stretch">
             <form action="<?= base_url('/contact') ?>" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -467,7 +467,23 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
+          </div> -->
+          <?php
+          // Veamos si hay mensaje y lo mostramos
+          if ($msg != "") {
+            echo "<div>" . $msg . "</div>";
+          }
+          ?>
+
+          <h1>Formulario de contacto</h1>
+          <form action="<?php echo base_url(); ?>/contact/sendMail" method="post">
+
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+            <textarea name="mensaje" id="mensaje" cols="50" rows="5"></textarea>
+            <button type="submit">Enviar</button>
+          </form>
 
         </div>
 
@@ -480,7 +496,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        Copyright  <i class="fas fa-copyright    "></i>  <strong><span> jflorido94.es </span></strong>
+        Copyright <i class="fas fa-copyright    "></i> <strong><span> jflorido94.es </span></strong>
       </div>
     </div>
   </footer><!-- End  Footer -->
