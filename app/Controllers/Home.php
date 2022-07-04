@@ -15,10 +15,10 @@ class Home extends BaseController
     public function contact()
     {
           // Recogemos los datos del formulario
-          $subject = $this->request->getPost('asunto') . " - Portfolio" ;
-          $message = $this->request->getPost('mensaje');
-          $nombreusuario = $this->request->getPost('nombre');
-          $emailusuario = $this->request->getPost('email');
+          $subject = $this->request->getVar('asunto') . " - Portfolio" ;
+          $message = $this->request->getVar('mensaje');
+          $nombreusuario = $this->request->getVar('nombre');
+          $emailusuario = $this->request->getVar('email');
           
           var_dump($this->request);
   
