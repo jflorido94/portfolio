@@ -38,9 +38,9 @@ class Home extends BaseController
               ];
           }
   
-          return view('index',$data);
+        //   return view('index',$data);
         //   echo view('contact_view', $data);
 
-        // redirect();
+        redirect();
     }
 }
