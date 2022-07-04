@@ -470,8 +470,10 @@
           </div> -->
           <?php
           // Veamos si hay mensaje y lo mostramos
-          if ($msg != "") {
-            echo "<div>" . $msg . "</div>";
+          if (isset($msg)) {
+            if ($msg != "") {
+              echo "<div>" . $msg . "</div>";
+            }
           }
           ?>
 
