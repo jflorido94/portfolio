@@ -26,14 +26,14 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $userAgent = 'CodeIgniter Mail';
+    public $userAgent = 'CodeIgniter';
 
     /**
      * The mail sending protocol: mail, sendmail, smtp
      *
      * @var string
      */
-    public $protocol = 'smtp';
+    public $protocol = 'mail';
 
     /**
      * The server path to Sendmail.
@@ -47,28 +47,28 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost = env('MAILGUN_SMTP_SERVER');
+    public $SMTPHost;
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = env('MAILGUN_SMTP_LOGIN');
+    public $SMTPUser;
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = env('MAILGUN_SMTP_PASSWORD');
+    public $SMTPPass;
 
     /**
      * SMTP Port
      *
      * @var int
      */
-    public $SMTPPort = env('MAILGUN_SMTP_PORT');
+    public $SMTPPort = 25;
 
     /**
      * SMTP Timeout (in seconds)

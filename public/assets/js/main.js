@@ -90,10 +90,10 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-toggle-ico', function(e) {
     select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    this.classList.toggle('fa-bars')
+    this.classList.toggle('fa-times')
   })
 
   /**
@@ -106,9 +106,9 @@
       let body = select('body')
       if (body.classList.contains('mobile-nav-active')) {
         body.classList.remove('mobile-nav-active')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        let navbarToggle = select('.mobile-toggle-ico')
+        navbarToggle.classList.toggle('fa-bars')
+        navbarToggle.classList.toggle('fa-times')
       }
       scrollto(this.hash)
     }
