@@ -21,13 +21,6 @@
     <!-- Animaciones AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- vendors CSS Files -->
-    <!-- <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -95,7 +88,7 @@
                     </li>
                     <li class="w-75"><a href="#portfolio" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-briefcase fa-fw w-50 mx-auto"></i>
-                            <span class="w-50">Portfolio</span>
+                            <span class="w-50">Proyectos</span>
                         </a>
                     </li>
                     <li class="w-75"><a href="#contact" class="nav-link scrollto d-flex justify-content-between">
@@ -121,7 +114,7 @@
 
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about section-bg">
             <div class="container">
 
                 <div class="section-title">
@@ -353,7 +346,8 @@
                             <p><em>Alfonso Romero Polo, Paterna del Campo, HUELVA </em></p>
                             <ul>
                                 <li>Servicio al cliente en tienda de venta y reparaciones de equipos informáticos.</li>
-                                <li>Reparaciones e instalaciones de equipos informáticos tanto Sofware como Hardware.</li>
+                                <li>Reparaciones e instalaciones de equipos informáticos tanto Sofware como Hardware.
+                                </li>
                             </ul>
                         </div>
                         <div class="resume-item">
@@ -373,6 +367,105 @@
             </div>
         </section><!-- End Resume Section -->
 
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Proyectos</h2>
+                    <p>Listado de proyectos desplegados en servidores de acceso publico organizado por categorias.</p>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-api">APIs</li>
+                            <li data-filter=".filter-front">Front</li>
+                            <li data-filter=".filter-soft">Software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-api">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-links">
+                                <a href="portfolio-details.html" title="Mas detalles">
+                                    <i class="fas fa-plus fa-fw"></i>
+                                </a>
+                                <a href="assets/img/portfolio/portfolio-1.jpg" title="Enlace">
+                                    <i class="fas fa-link fa-fw"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contacto</h2>
+                    <p>Aqui puede descargar mi curriculum vitae o contactar conmigo via email, me pondré en contacto con
+                        usted en cuanto reciba el correo.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-right">
+                        <div class="cv d-flex align-items-center flex-wrap justify-content-around">
+                            <h4>Obtener mi Curriculum Vitae en formato PDF</h4>
+                            <a class="btn btn-outline-primary align-middle mt-4" href="#" role="button">
+                                <i class="fas fa-file-download fa-fw align-middle mx-2"></i> Descargar CV
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch aos-init aos-animate"
+                        data-aos="fade-left">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-md-6"> 
+                                    <label for="name">Your Name</label> 
+                                    <input type="text" name="name" class="form-control" id="name" required="">
+                                </div>
+                                <div class="form-group col-md-6"> 
+                                    <label for="name">Your Email</label> 
+                                    <input type="email" class="form-control" name="email" id="email" required="">
+                                    </div>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="name">Subject</label> 
+                                <input type="text" class="form-control" name="subject" id="subject" required="">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" required=""></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-primary align-middle mt-4" type="submit">
+                                    <i class="fas fa-paper-plane fa-fw align-middle mx-2"></i> 
+                                    <!-- Enviar Email --> Soon WIP
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+
+
+
 
     </main><!-- End #main -->
 
@@ -390,12 +483,7 @@
     </a>
 
 
-    <!-- vendors JS Files -->
-    <!-- 
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendors/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <!-- vendors JS Files
     <script src="assets/vendors/php-email-form/validate.js"></script> -->
 
 
@@ -418,6 +506,9 @@
 
     <!-- Script Waypoints -->
     <script src="assets/js/noframework.waypoints.min.js"></script>
+
+    <!-- Script Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
