@@ -10,25 +10,37 @@ class Downloads extends BaseController
     {
         $agent = $this->request->getUserAgent();
         
-        if ($agent->isBrowser()) {
-            $currentAgent = $agent->getBrowser() . ' ' . $agent->getVersion();
-        } elseif ($agent->isRobot()) {
-            $currentAgent = $agent->getRobot();
-        } elseif ($agent->isMobile()) {
-            $currentAgent = $agent->getMobile();
-        } else {
-            $currentAgent = 'Unidentified User Agent';
-        }
+        $location = $this->getLocation($this->getIpAddress());
+        // var_dump($location);
         
-        echo $currentAgent . '</br>';
+        echo '</br>';
+
+        echo ' IP: '.  $location->ip . '</br>';
+
+        echo ' Pais: '.  $location->country . '</br>';
+
+        echo ' Region: '.  $location->region . '</br>';
+
+        echo ' Ciudad: '.  $location->city . '</br>';
         
-        echo $this->request->getIPAddress() . '</br>';
-        
-        var_dump($this->getLocation($this->getIpAddress())). '</br>';
-        
-        echo $agent->getPlatform();
+        echo ' Navegador: '. $this->getCurrentAgent($agent) . '</br>';
+
+        echo ' Sistema Operativo: '.  $agent->getPlatform() . '</br>';
         
         // return $this->response->download(WRITEPATH . 'uploads/pdf/' . 'CV-2022-07-19.pdf', null)->setFileName(date('Y-m-d').'-JavierFlorido.pdf');
+    }
+
+    private function getCurrentAgent($agent)
+    {
+        if ($agent->isBrowser()) {
+            return $agent->getBrowser() . ' ' . $agent->getVersion();
+        } elseif ($agent->isRobot()) {
+            return $agent->getRobot();
+        } elseif ($agent->isMobile()) {
+            return $agent->getMobile();
+        } else {
+            return 'Unidentified User Agent';
+        }
     }
 
     private function getLocation($ip)
@@ -38,7 +50,7 @@ class Downloads extends BaseController
         $json = curl_exec($ch);
         curl_close($ch);
         // Decode JSON response
-        $ipWhoIsResponse = json_decode($json, true);
+        $ipWhoIsResponse = json_decode($json);
         // Country code output, field "country_code"
         return $ipWhoIsResponse;
     }
