@@ -24,7 +24,7 @@ class Downloads extends BaseController
         
         echo $this->request->getIPAddress() . '</br>';
         
-        var_dump($this->getLocation($this->request->getIPAddress())). '</br>';
+        var_dump($this->getLocation($_SERVER['HTTP_CLIENT_IP'])). '</br>';
         
         echo $agent->getPlatform();
         
