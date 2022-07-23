@@ -14,9 +14,7 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Animaciones AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,13 +23,10 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Bootstrap CSS 5.0.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- Font Awesome CSS 5.15.4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -155,7 +150,8 @@
                                     <li><i class="fas fa-chevron-right"></i> <strong>Grado:</strong> <span>Junior</span>
                                     </li>
                                     <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong>
-                                        <span>jflorido94@hotmail.com</span></li>
+                                        <span>jflorido94@hotmail.com</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -183,12 +179,10 @@
 
                 <div class="row no-gutters">
 
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="100">
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="count-box">
                             <i class="fab fa-leanpub fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="3"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Cursos</strong> realizados via online o presencial.</p>
                         </div>
                     </div>
@@ -196,29 +190,24 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                         <div class="count-box">
                             <i class="fas fa-certificate fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="3"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Certificaciones</strong> obtenidas de cursos realizados presenciales u online.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="300">
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="count-box">
                             <i class="fas fa-project-diagram fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="3"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Proyectos</strong> completados y subidos a Github.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="200">
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="count-box">
                             <i class="fas fa-rocket fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="3"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Despligues</strong> públicos de proyectos.</p>
                         </div>
                     </div>
@@ -246,24 +235,21 @@
                         <div class="progress">
                             <span class="skill">PHP <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
                             <span class="skill">C# <i class="val">70%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
                             <span class="skill">Java <i class="val">50%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -274,24 +260,21 @@
                         <div class="progress">
                             <span class="skill">Laravel <i class="val">80%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
                             <span class="skill">Bootstrap <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
                         <div class="progress">
                             <span class="skill">Codeigniter <i class="val">50%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -426,24 +409,23 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch aos-init aos-animate"
-                        data-aos="fade-left">
+                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
-                                <div class="form-group col-md-6"> 
-                                    <label for="name">Your Name</label> 
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Name</label>
                                     <input type="text" name="name" class="form-control" id="name" required="">
                                 </div>
-                                <div class="form-group col-md-6"> 
-                                    <label for="name">Your Email</label> 
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Email</label>
                                     <input type="email" class="form-control" name="email" id="email" required="">
-                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group"> 
-                                <label for="name">Subject</label> 
+                            <div class="form-group">
+                                <label for="name">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject" required="">
                             </div>
-                            <div class="form-group"> 
+                            <div class="form-group">
                                 <label for="name">Message</label>
                                 <textarea class="form-control" name="message" rows="10" required=""></textarea>
                             </div>
@@ -454,7 +436,7 @@
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-outline-primary align-middle mt-4" type="submit">
-                                    <i class="fas fa-paper-plane fa-fw align-middle mx-2"></i> 
+                                    <i class="fas fa-paper-plane fa-fw align-middle mx-2"></i>
                                     <!-- Enviar Email --> Soon WIP
                                 </button>
                             </div>
@@ -513,6 +495,17 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        let url = 'https://api.github.com/users/jflorido94';
+
+        fetch(url)
+            .then((respuesta) => respuesta.json())
+            .then((data) => {
+                console.log(data);
+            }).catch((error) => {
+                console.error(error);
+            });
+    </script>
 
 </body>
 
