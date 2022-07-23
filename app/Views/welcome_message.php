@@ -495,7 +495,9 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <?php var_dump($githubinfo)?>
+     <?php 
+    //  var_dump($githubinfo)
+     ?>
 
 </body>
 
