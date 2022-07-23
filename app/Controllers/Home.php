@@ -23,10 +23,9 @@ class Home extends BaseController
             CURLOPT_TIMEOUT => 30, // Tiempo máximo para ejecutar
             // CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, // usa la versión declarada
             CURLOPT_CUSTOMREQUEST => "GET", // el tipo de petición, puede ser PUT, POST, GET o Delete dependiendo del servicio
-            // CURLOPT_HTTPHEADER => array(
-            //     "x-rapidapi-host: covid-19-coronavirus-statistics.p.rapidapi.com",
-            //     "x-rapidapi-key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-            // ), //configura las cabeceras enviadas al servicio
+            CURLOPT_HTTPHEADER => array(
+                "User-Agent: jflorido94.es",
+            ), //configura las cabeceras enviadas al servicio
         )); //curl_setopt_array configura las opciones para una transferencia cURL
 
         $response = curl_exec($curl); // respuesta generada
