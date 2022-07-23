@@ -507,7 +507,7 @@
             });
         console.log(<?= $githubinfo ?>);
     </script>
-
+    <?= var_dump($githubinfo)?>
 </body>
 
 </html>
