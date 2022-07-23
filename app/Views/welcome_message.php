@@ -505,7 +505,6 @@
             }).catch((error) => {
                 console.error(error);
             });
-        console.log(<?= $githubinfo ?>);
     </script>
     <?= var_dump($githubinfo)?>
 </body>
