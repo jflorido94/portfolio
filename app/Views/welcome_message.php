@@ -505,6 +505,7 @@
             }).catch((error) => {
                 console.error(error);
             });
+        console.log(<?= $githubinfo ?>);
     </script>
 
 </body>
