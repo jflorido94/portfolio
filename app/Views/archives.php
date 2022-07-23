@@ -1,4 +1,4 @@
-<form action="subir" method="post" enctype="multipart/form-data">
+<form action=<?= route_to('upload') ?> method="post" enctype="multipart/form-data">
     <input type="file" name="pdf" id="pdf">
 
     <button type="submit" class="btn btn-primary">Subir</button>

@@ -3,31 +3,38 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ArchiveModel;
+use App\Models\DownloadModel;
 
 class Downloads extends BaseController
 {
     public function index()
     {
         $agent = $this->request->getUserAgent();
-        
+
         $location = $this->getLocation($this->getIpAddress());
-        // var_dump($location);
-        
-        echo '</br>';
 
-        echo ' IP: '.  $location->ip . '</br>';
+        $archiveM = new ArchiveModel();
 
-        echo ' Pais: '.  $location->country . '</br>';
+        if ($archive = $archiveM->where('type', 'pdf-cv')->orderBy('updated_at', 'desc')->first()) {
 
-        echo ' Region: '.  $location->region . '</br>';
+            $downloadM = new DownloadModel();
 
-        echo ' Ciudad: '.  $location->city . '</br>';
-        
-        echo ' Navegador: '. $this->getCurrentAgent($agent) . '</br>';
+            $data = [
+                'ip' => $location->ip,
+                'country' => $location->country,
+                'region' => $location->region,
+                'city' => $location->city,
+                'user_agent' => $this->getCurrentAgent($agent),
+                'platform' => $agent->getPlatform(),
+                'id_archive' => $archive['id'],
+            ];
+            $downloadM->insert($data);
 
-        echo ' Sistema Operativo: '.  $agent->getPlatform() . '</br>';
-        
-        // return $this->response->download(WRITEPATH . 'uploads/pdf/' . 'CV-2022-07-19.pdf', null)->setFileName(date('Y-m-d').'-JavierFlorido.pdf');
+            return $this->response->download($archive['route'], null)->setFileName(date('Y-m-d') . '-JavierFlorido.pdf');
+        } else {
+            return $this->response->redirect(route_to('main'));
+        }
     }
 
     private function getCurrentAgent($agent)

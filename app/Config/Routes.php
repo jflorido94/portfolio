@@ -35,10 +35,10 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('archives', 'Archives::index');
-$routes->get('cv', 'Downloads::index');
-$routes->post('subir', 'Archives::subir');
+$routes->get('/', 'Home::index', ['as' => 'main']);
+$routes->get('archives', 'Archives::index', ['as' => 'archives']);
+$routes->post('subir', 'Archives::store', ['as' => 'upload']);
+$routes->get('cv', 'Downloads::index', ['as' => 'download']);
 
 /*
  * --------------------------------------------------------------------

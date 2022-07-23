@@ -39,7 +39,15 @@ class DownloadsMigration extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
             ],
-            'date' => [
+            'created_at' => [
+                'type'           => 'DATE',
+                'NULL'           => FALSE,
+            ],
+            'updated_at' => [
+                'type'           => 'DATE',
+                'NULL'           => FALSE,
+            ],
+            'deleted_at' => [
                 'type'           => 'DATE',
                 'NULL'           => FALSE,
             ],

@@ -13,7 +13,7 @@ class AddIdArchiveDonwloadsMigration extends Migration
                 'type'      => 'INT',
                 'constraint' => 5,
                 'unsigned'  => TRUE,
-                'after'         => 'date',
+                'before'         => 'created_at',
                 'null'            => TRUE
             ],
             'CONSTRAINT downloads_id_archive_fk_1 FOREIGN KEY(`id_archive`) REFERENCES `archives`(`id`)'

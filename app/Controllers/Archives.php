@@ -3,29 +3,32 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ArchiveModel;
 use CodeIgniter\Files\File;
 
 class Archives extends BaseController
 {
     public function index()
     {
-
         return view("archives");
-
     }
 
-    public function subir()
+    
+    public function store()
     {
         $file = $this->request->getFile('pdf');
-
-        if (! $file->hasMoved()) {
-            $filepath = WRITEPATH . 'uploads/' . $file->store('pdf', 'CV-' . date('Y-m-d').'.pdf');
-
-            $data = ['uploaded_fileinfo' => new File($filepath)];
-
-            return view('upload_success', $data);
+    
+        if (!$file->hasMoved()) {
+            
+            $archiveM = new ArchiveModel();
+            $data = [
+                'type' => 'pdf-cv',
+                'route'  => WRITEPATH . 'uploads/pdf/CV-'.date('Y-m-d') . '.pdf',
+            ];
+            if($archiveM->insert($data)) {
+                $file->store('pdf', 'CV-' . date('Y-m-d') . '.pdf');
+            }
         }
-
+        return $this->response->redirect(route_to('archives'));
     }
-
 }

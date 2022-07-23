@@ -12,19 +12,21 @@ class ArchiveModel extends Model
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
         'type',
         'route',
-        'date',
+        'created_at',
+        'updated_at',
+        'deleted_at',
     ];
 
     // Dates
     protected $useTimestamps = true;
     protected $dateFormat    = 'date';
-    protected $createdField  = 'date';
+    protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
