@@ -421,7 +421,7 @@
                     <div class="col-lg-5 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-right">
                         <div class="cv d-flex align-items-center flex-wrap justify-content-around">
                             <h4>Obtener mi Curriculum Vitae en formato PDF</h4>
-                            <a class="btn btn-outline-primary align-middle mt-4" href="#" role="button">
+                            <a class="btn btn-outline-primary align-middle mt-4" href=<?= route_to('download') ?> role="button">
                                 <i class="fas fa-file-download fa-fw align-middle mx-2"></i> Descargar CV
                             </a>
                         </div>
