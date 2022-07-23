@@ -44,7 +44,7 @@
                 <img src="assets/img/profile-img2.jpg" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href=<?= base_url(); ?>>Javier Florido</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a href="https://www.linkedin.com/in/javier-florido-pavon-a3073a22b/" class="linkedin">
+                    <a href="www.linkedin.com/in/jflorido94/" class="linkedin">
                         <i class="fab fa-linkedin-in fa-fw"></i>
                     </a>
                     <a href="https://github.com/jflorido94" class="linkedin">
