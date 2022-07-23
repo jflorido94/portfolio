@@ -199,7 +199,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="count-box">
                             <i class="fas fa-project-diagram fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="<?= $githubinfo['public_repos']?>" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo($githubinfo ? $githubinfo['public_repos'] : '13' ) ?>" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Proyectos</strong> completados y subidos a Github.</p>
                         </div>
                     </div>

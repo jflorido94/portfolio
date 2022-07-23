@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data = ['githubinfo' => $this->getGithubInfo()];
+        $data['githubinfo'] = $this->getGithubInfo();
         return view('welcome_message', $data);
     }
 
@@ -31,11 +31,13 @@ class Home extends BaseController
         $response = curl_exec($curl); // respuesta generada
         $err = curl_error($curl); // muestra errores en caso de existir
 
-        if ($response) {
-            return $response;
-        } else {
-            return $err;
-        }
+        // if ($response) {
+        //     return $response;
+        // } else {
+        //     return $err;
+        // }
+
+        return $response;
         
     }
 }
