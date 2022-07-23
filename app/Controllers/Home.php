@@ -17,10 +17,10 @@ class Home extends BaseController
         curl_setopt_array($curl, array(
             CURLOPT_URL => "https://api.github.com/users/jflorido94", //url a la que se conecta
             CURLOPT_RETURNTRANSFER => true, //devuelve el resultado como una cadena del tipo curl_exec
-            CURLOPT_FOLLOWLOCATION => true, //sigue el encabezado que le envíe el servidor
-            CURLOPT_ENCODING => "", // permite decodificar la respuesta y puede ser"identity", "deflate", y "gzip", si está vacío recibe todos los disponibles.
-            CURLOPT_MAXREDIRS => 10, // Si usamos CURLOPT_FOLLOWLOCATION le dice el máximo de encabezados a seguir
-            CURLOPT_TIMEOUT => 30, // Tiempo máximo para ejecutar
+            // CURLOPT_FOLLOWLOCATION => true, //sigue el encabezado que le envíe el servidor
+            // CURLOPT_ENCODING => "", // permite decodificar la respuesta y puede ser"identity", "deflate", y "gzip", si está vacío recibe todos los disponibles.
+            // CURLOPT_MAXREDIRS => 10, // Si usamos CURLOPT_FOLLOWLOCATION le dice el máximo de encabezados a seguir
+            // CURLOPT_TIMEOUT => 30, // Tiempo máximo para ejecutar
             // CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, // usa la versión declarada
             CURLOPT_CUSTOMREQUEST => "GET", // el tipo de petición, puede ser PUT, POST, GET o Delete dependiendo del servicio
             CURLOPT_HTTPHEADER => array(

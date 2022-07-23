@@ -182,7 +182,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="count-box">
                             <i class="fab fa-leanpub fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="22" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Cursos</strong> realizados via online o presencial.</p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                         <div class="count-box">
                             <i class="fas fa-certificate fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Certificaciones</strong> obtenidas de cursos realizados presenciales u online.
                             </p>
                         </div>
@@ -199,7 +199,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="count-box">
                             <i class="fas fa-project-diagram fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?= $githubinfo['public_repos']?>" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Proyectos</strong> completados y subidos a Github.</p>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="count-box">
                             <i class="fas fa-rocket fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Despligues</strong> públicos de proyectos.</p>
                         </div>
                     </div>
@@ -495,18 +495,6 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <script>
-        let url = 'https://api.github.com/users/jflorido94';
-
-        fetch(url)
-            .then((respuesta) => respuesta.json())
-            .then((data) => {
-                console.log(data);
-            }).catch((error) => {
-                console.error(error);
-            });
-    </script>
-    <?= var_dump($githubinfo)?>
 </body>
 
 </html>
