@@ -37,7 +37,7 @@ class Home extends BaseController
         //     return $err;
         // }
 
-        return $response;
+        return json_decode($response);
         
     }
 }
