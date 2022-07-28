@@ -38,10 +38,11 @@ class ProyectsMigration extends Migration
             'url' => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
+                'NULL'           => true  
             ],
             'image' => [
                 'type'           => 'VARCHAR',
-                'constraint'     => '255',
+                'NULL'           => true   
             ],
             'details' => [
                 'type'           => 'VARCHAR',

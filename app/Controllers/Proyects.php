@@ -18,21 +18,20 @@ class Proyects extends BaseController
 
         var_dump($image);
 
-        if (!$image->hasMoved()) {
-
-            $data = [
-                'name' => $this->request->getPost('name'),
-                'category' => $this->request->getPost('category'),
-                'type' => $this->request->getPost('type'),
-                'date' => $this->request->getPost('date'),
-                'git_url' => $this->request->getPost('git_url'),
-                'url' => $this->request->getPost('url'),
-                'details' => $this->request->getPost('details'),
-                'in_progress' => $this->request->getPost('in_progress') == 'true' ? true : false,
-            ];
-            $proyectM = new ProyectModel();
-            if ($id = $proyectM->insert($data, true)) {
-
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'category' => $this->request->getPost('category'),
+            'type' => $this->request->getPost('type'),
+            'date' => $this->request->getPost('date'),
+            'git_url' => $this->request->getPost('git_url'),
+            'url' => $this->request->getPost('url'),
+            'details' => $this->request->getPost('details'),
+            'in_progress' => $this->request->getPost('in_progress') == 'true' ? true : false,
+        ];
+        $proyectM = new ProyectModel();
+        if ($id = $proyectM->insert($data, true) && $image->isValid()) {
+            
+            if (!$image->hasMoved()) {
                 $data = [
                     'image' => WRITEPATH . 'uploads/' . $image->store('preview'),
                 ];
