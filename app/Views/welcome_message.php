@@ -42,7 +42,7 @@
 
             <div class="profile">
                 <img src="assets/img/profile-img2.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href=<?= base_url(); ?>>Javier Florido</a></h1>
+                <h1 class="text-light"><a href=<?= route_to('main') ?>>Javier Florido</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="www.linkedin.com/in/jflorido94/" class="linkedin">
                         <i class="fab fa-linkedin-in fa-fw"></i>
