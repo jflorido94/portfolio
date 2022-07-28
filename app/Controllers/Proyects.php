@@ -39,6 +39,6 @@ class Proyects extends BaseController
                 $proyectM->update($id,$data);
             }
         }
-        // return $this->response->redirect(route_to('proyect'));
+        return $this->response->redirect(route_to('proyect'));
     }
 }
