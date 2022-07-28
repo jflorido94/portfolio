@@ -16,6 +16,8 @@ class Proyects extends BaseController
     {
         $image = $this->request->getFile('image');
 
+        var_dump($image);
+
         if (!$image->hasMoved()) {
 
             $data = [
@@ -25,15 +27,18 @@ class Proyects extends BaseController
                 'date' => $this->request->getPost('date'),
                 'git_url' => $this->request->getPost('git_url'),
                 'url' => $this->request->getPost('url'),
-                'image' => WRITEPATH . 'uploads/preview/' . $this->request->getPost('name') .'.'. $image->guessExtension(),
                 'details' => $this->request->getPost('details'),
                 'in_progress' => $this->request->getPost('in_progress') == 'true' ? true : false,
             ];
             $proyectM = new ProyectModel();
-            if ($proyectM->insert($data)) {
-                $image->store('preview', $this->request->getPost('name') . $image->guessExtension());
+            if ($id = $proyectM->insert($data, true)) {
+
+                $data = [
+                    'image' => WRITEPATH . 'uploads/' . $image->store('preview'),
+                ];
+                $proyectM->update($id,$data);
             }
         }
-        return $this->response->redirect(route_to('proyect'));
+        // return $this->response->redirect(route_to('proyect'));
     }
 }
