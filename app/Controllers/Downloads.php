@@ -21,12 +21,12 @@ class Downloads extends BaseController
             $downloadM = new DownloadModel();
 
             $data = [
-                'ip' => $location->ip,
-                'country' => $location->country,
-                'region' => $location->region,
-                'city' => $location->city,
+                'ip' => isset($location->ip) ? $location->ip : "",
+                'country' => isset($location->country) ? $location->country : "",
+                'region' => isset($location->region) ? $location->region : "",
+                'city' => isset($location->city) ? $location->city : "",
                 'user_agent' => $this->getCurrentAgent($agent),
-                'platform' => $agent->getPlatform(),
+                'platform' => null !== $agent->getPlatform() ? $agent->getPlatform() : "",
                 'id_archive' => $archive['id'],
             ];
             $downloadM->insert($data);

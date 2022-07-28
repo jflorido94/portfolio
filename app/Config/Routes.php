@@ -39,6 +39,8 @@ $routes->get('/', 'Home::index', ['as' => 'main']);
 $routes->get('archives', 'Archives::index', ['as' => 'archives']);
 $routes->post('subir', 'Archives::store', ['as' => 'upload']);
 $routes->get('cv', 'Downloads::index', ['as' => 'download']);
+$routes->get('proyect', 'Proyects::index', ['as' => 'proyect']);
+$routes->post('proyect', 'Proyects::store', ['as' => 'new_proyect']);
 
 /*
  * --------------------------------------------------------------------

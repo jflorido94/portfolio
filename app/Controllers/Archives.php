@@ -13,18 +13,18 @@ class Archives extends BaseController
         return view("archives");
     }
 
-    
+
     public function store()
     {
         $file = $this->request->getFile('pdf');
-    
+
         if (!$file->hasMoved()) {
-            
-            $archiveM = new ArchiveModel();
+
             $data = [
                 'type' => 'pdf-cv',
                 'route'  => WRITEPATH . 'uploads/pdf/CV-'.date('Y-m-d') . '.pdf',
             ];
+            $archiveM = new ArchiveModel();
             if($archiveM->insert($data)) {
                 $file->store('pdf', 'CV-' . date('Y-m-d') . '.pdf');
             }
