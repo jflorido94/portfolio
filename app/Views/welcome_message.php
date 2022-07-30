@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url('assets/img/favicon.png')?>" rel="icon">
+    <link href="<?= base_url('assets/img/apple-touch-icon.png')?>" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/style.css')?>" rel="stylesheet">
 
     <!-- Bootstrap CSS 5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -41,7 +41,7 @@
         <div class="d-flex flex-column">
 
             <div class="profile">
-                <img src="assets/img/profile-img2.jpg" alt="" class="img-fluid rounded-circle">
+                <img src="<?= base_url('assets/img/profile-img2.jpg')?>" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href=<?= route_to('main') ?>>Javier Florido</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="www.linkedin.com/in/jflorido94/" class="linkedin">
@@ -56,37 +56,37 @@
             <nav id="navbar" class="nav-menu navbar">
                 <ul class="w-75">
                     <li class="w-75">
-                        <a href="#hero" class="nav-link scrollto active d-flex justify-content-between">
+                        <a href="<?= base_url('#hero')?>" class="nav-link scrollto active d-flex justify-content-between">
                             <i class="fas fa-home fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Inicio</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#about" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#about')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-user-alt fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Sobre mi</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#facts" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#facts')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-award fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Logros</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#skills" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#skills')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-book-open fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Habilidades</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#resume" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#resume')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-route fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Cronologia</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#portfolio" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#portfolio')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-briefcase fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Proyectos</span>
                         </a>
                     </li>
-                    <li class="w-75"><a href="#contact" class="nav-link scrollto d-flex justify-content-between">
+                    <li class="w-75"><a href="<?= base_url('#contact')?>" class="nav-link scrollto d-flex justify-content-between">
                             <i class="fas fa-envelope fa-fw w-50 mx-auto"></i>
                             <span class="w-50">Contacto</span>
                         </a>
@@ -199,7 +199,7 @@
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="count-box">
                             <i class="fas fa-project-diagram fa-fw"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="<?php echo($githubinfo ? $githubinfo->public_repos : '13' ) ?>" data-purecounter-duration="3" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="<?php echo ($githubinfo ? $githubinfo->public_repos : '13') ?>" data-purecounter-duration="3" class="purecounter"></span>
                             <p><strong>Proyectos</strong> completados y subidos a Github.</p>
                         </div>
                     </div>
@@ -370,21 +370,29 @@
                     </div>
                 </div>
 
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="portfolio-details.html" title="Mas detalles">
-                                    <i class="fas fa-plus fa-fw"></i>
-                                </a>
-                                <a href="assets/img/portfolio/portfolio-1.jpg" title="Enlace">
-                                    <i class="fas fa-link fa-fw"></i>
-                                </a>
+                    <?php foreach ($proyects as $item ) { ?>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-<?= $item['category'] ?>">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-links">
+                                    <a href="<?= route_to('details', $item['id'])?>" title="Mas detalles">
+                                        <i class="fas fa-plus fa-fw"></i>
+                                    </a>
+                                    <?php if ($item['url']) { ?>
+                                        <a href=<?=$item['url'] ?> title="Enlace" target="_blank">
+                                            <i class="fas fa-link fa-fw"></i>
+                                        </a>
+                                        
+                                    <?php } ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                    <?php } ?>
+
 
 
                 </div>
@@ -460,7 +468,7 @@
         </div>
     </footer><!-- End  Footer -->
 
-    <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center">
+    <a href="<?= base_url('#hero')?>" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="fas fa-chevron-up"></i>
     </a>
 
@@ -487,17 +495,17 @@
     </script>
 
     <!-- Script Waypoints -->
-    <script src="assets/js/noframework.waypoints.min.js"></script>
+    <script src="<?= base_url('assets/js/noframework.waypoints.min.js')?>"></script>
 
     <!-- Script Isotope -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="<?= base_url('assets/js/main.js')?>"></script>
 
-     <?php 
+    <?php
     //  var_dump($githubinfo)
-     ?>
+    ?>
 
 </body>
 

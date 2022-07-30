@@ -2,12 +2,21 @@
 
 namespace App\Controllers;
 
+use App\Models\ProyectModel;
+
 class Home extends BaseController
 {
     public function index()
     {
         $data['githubinfo'] = $this->getGithubInfo();
+        $data['proyects'] = $this->getProyects();
         return view('welcome_message', $data);
+    }
+
+    public function details($id)
+    {
+        $data['proyect'] = $this->getProyect($id);
+        return view('portfolio-details', $data);
     }
 
     private function getGithubInfo()
@@ -38,6 +47,36 @@ class Home extends BaseController
         // }
 
         return json_decode($response);
-        
+    }
+
+    private function getProyects()
+    {
+        $proyectM = new ProyectModel();
+
+        $proyectos = $proyectM->findAll();
+
+        foreach ($proyectos as $key) {
+            $key['image'] = $this->renderImage($key['image']);
+        }
+
+        return $proyectos;
+    }
+
+    private function getProyect($id)
+    {
+        $proyectM = new ProyectModel();
+
+        $proyecto = $proyectM->find($id);
+
+        $proyecto['image'] = $this->renderImage($proyecto['image']);
+
+        return $proyecto;
+    }
+
+    private function renderImage($path)
+    {
+        $myimage = file_get_contents($path);
+        header('Content-Type: image/jpg');
+        return $myimage;
     }
 }
