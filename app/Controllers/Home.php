@@ -75,7 +75,7 @@ class Home extends BaseController
 
     private function renderImage($path)
     {
-        $myimage = file_get_contents($path);
+        $myimage = file_get_contents('../writable/uploads/preview/1659029451_18d9e6525c97c1cb190c.jpg');
         header('Content-Type: image/jpg');
         return $myimage;
     }
